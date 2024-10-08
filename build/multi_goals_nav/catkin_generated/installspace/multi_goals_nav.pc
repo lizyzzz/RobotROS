@@ -1,0 +1,8 @@
+prefix=/home/lizy/demo_mynav/install
+
+Name: multi_goals_nav
+Description: Description of multi_goals_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,24 @@
+<launch>
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+        <!-- <param name="base_global_planner" value="myGlobal_planner/Global_planner" /> -->
+        <!-- <param name="base_global_planner" value="Planner/RRTStar_planner" /> -->
+        <param name="base_global_planner" value="ImRRTStarFN/ImRRTStarFN_planner" />
+        <!-- <param name="base_global_planner" value="ImRRTStarFN02/ImRRTStarFN02_planner" /> -->
+
+        <!-- <param name="base_local_planner" value="myLocal_planner/Local_planner" /> -->
+        <!-- <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" /> -->
+
+        <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS" />
+        <rosparam file="$(find nav_demo)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find nav_demo)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find nav_demo)/param/local_costmap_params.yaml" command="load" />
+        <rosparam file="$(find nav_demo)/param/global_costmap_params.yaml" command="load" />
+        <!-- <rosparam file="$(find nav_demo)/param/move_base_params.yaml" command="load" /> -->
+        
+        <rosparam file="$(find nav_demo)/param/base_local_planner_params.yaml" command="load" />
+        <!-- <rosparam file="$(find nav_demo)/param/dwa_local_planner_params.yaml" command="load" /> -->
+
+    </node>
+
+</launch>

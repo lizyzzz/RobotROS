@@ -1,0 +1,8 @@
+<launch>
+    <!-- slam node -->
+    <include file="$(find nav_demo)/launch/nav01_slam.launch" />
+
+    <!-- move_base node -->
+    <include file="$(find nav_demo)/launch/nav05_path.launch" />
+
+</launch>

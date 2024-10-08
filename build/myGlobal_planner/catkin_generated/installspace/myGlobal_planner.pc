@@ -1,0 +1,8 @@
+prefix=/home/lizy/demo_mynav/install
+
+Name: myGlobal_planner
+Description: Description of myGlobal_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

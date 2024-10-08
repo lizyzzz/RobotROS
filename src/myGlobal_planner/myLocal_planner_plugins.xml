@@ -1,0 +1,6 @@
+<library path="lib/libmyLocal_planner_lib">
+
+    <class name="myLocal_planner/Local_planner" type="myLocal_planner::Local_planner" base_class_type="nav_core::BaseLocalPlanner">
+        <description> This is my Local planner plugin </description>
+    </class>
+</library>

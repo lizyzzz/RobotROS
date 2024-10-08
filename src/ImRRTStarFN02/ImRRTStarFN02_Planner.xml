@@ -1,0 +1,5 @@
+<library path="lib/libImRRTStarFN02_Planner" >
+    <class name="ImRRTStarFN02/ImRRTStarFN02_planner" type="rrt_starFN02_Global_planner::ImRRTStarFN02_planner" base_class_type="nav_core::BaseGlobalPlanner" >
+        <description> This is ImRRTStarFn02 Global planner plugin </description>
+    </class>
+</library>

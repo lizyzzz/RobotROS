@@ -1,0 +1,14 @@
+# first name is the planner name "ImRRTStarFN_planner"
+ImRRTStarFN_planner:
+  goal_tolerence : 0.5
+  radius : 2.0
+  epsilon : 0.2
+  max_num_nodes : 4000
+  min_num_nodes : 2
+  search_specific_area : true
+  map_width : 20.0
+  map_height : 20.0
+  fixNode : 200
+  dynamic_count : 10
+  max_radius_factor : 4
+  

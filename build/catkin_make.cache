@@ -1,0 +1,2 @@
+ImRRTStarFN:ImRRTStarFN02:Planner:multi_goals_nav:myGlobal_planner:nav_demo:urdf_gazebo
+-DCATKIN_DEVEL_PREFIX=/home/lizy/demo_mynav/devel -DCMAKE_INSTALL_PREFIX=/home/lizy/demo_mynav/install -G Unix Makefiles

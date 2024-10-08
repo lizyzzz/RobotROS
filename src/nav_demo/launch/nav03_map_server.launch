@@ -1,0 +1,11 @@
+<launch>
+    <!-- 初始位置 -->
+    <!-- <arg name="world_init_x"       default="2.0" />
+    <arg name="world_init_y"       default="18.0" />
+    <arg name="world_init_z"       default="0.0" /> -->
+
+    <arg name="map" default="$(find nav_demo)/map/nav.yaml" />
+    <!-- <node pkg="map_server" type="map_server" name="map_server" args="$(arg map) -x $(arg world_init_x) -y $(arg world_init_y) -z $(arg world_init_z)" /> -->
+    <node pkg="map_server" type="map_server" name="map_server" args="$(arg map)" />
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/lizy/demo_mynav/devel
+
+Name: Planner
+Description: Description of Planner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
